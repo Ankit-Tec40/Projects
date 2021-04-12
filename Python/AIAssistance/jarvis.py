@@ -2,7 +2,8 @@ import pyttsx3
 import datetime
 import speech_recognition as sr
 import wikipedia
-import smtplib
+import webbrowser as wb
+
 
 
 engine=pyttsx3.init()
@@ -55,7 +56,7 @@ def takecommand():
         return "None"
     return query
 
-# def sendemail(to,content):
+
     
 
 
@@ -79,6 +80,11 @@ if __name__=="__main__":
             speak("According to wikipedia")
             print(result)
             speak(result)
+        elif "search in chrome" in query:
+            speak("what to search ?")
+            chromepath="C:\ProgramData\Microsoft\Windows\Start Menu\Programs\chrome.exe %s"
+            search=takecommand().lower()
+            wb.get(chromepath).open_new_tab(search+".com")
         elif "exit" in query:
             exit()
 
