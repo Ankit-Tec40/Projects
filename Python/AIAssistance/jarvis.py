@@ -72,6 +72,8 @@ if __name__=="__main__":
             time()
         elif "date" in query:
             date()
+        elif "who are you" in query:
+            speak("I am jarvis an AI assistant")
         elif "wikipedia" in query:
             print("searching...")
             speak("searching")
