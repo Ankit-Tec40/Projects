@@ -13,6 +13,7 @@ class window(QMainWindow):
         #navBar
         navigation_bar=QToolBar()
         self.addToolBar(navigation_bar)
+        
         back_button=QAction('Back',self)
         back_button.triggered.connect(self.browser.back)
         navigation_bar.addAction(back_button)
