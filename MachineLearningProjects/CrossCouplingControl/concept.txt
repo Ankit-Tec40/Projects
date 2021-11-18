@@ -1,0 +1,2 @@
+normal speed of car=60km/h
+speed diff=LWheel-Rwheel
