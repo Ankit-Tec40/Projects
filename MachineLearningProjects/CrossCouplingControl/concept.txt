@@ -1,2 +1,6 @@
-normal speed of car=60km/h
+initial Velocity provided to both wheel =60km/h
 speed diff=LWheel-Rwheel
+
+Inputs==
+        Speed diffrence between two wheels
+        
